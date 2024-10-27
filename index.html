@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dailog-box</title>
+</head>
+<body class="body">
+    <div class="bg-img">
+        <div class="header">
+       <img src="./images/netflix-logo.png" alt="logo" class="logo">
+       <button type="button" class="login-btn ">Explore</button>
+       <button type="button" class="login-btn">Sign In</button>
+        </div>
+    </div>
+    <p class="big-text">Unlimited movies,<br>TV shows and more</p>
+    <p class="small-text big-text">Starts at ₹149. Cancel at any time.</p>
+    <p class="medium-text big-text">Ready to watch? Enter your email to create or restart your membership.
+    </p>
+
+    <div class="email-btn">
+        <input type="text" placeholder="Email address" class="email-box">
+        <button class="login-btn start-btn"  onclick="openbox()">Get Started ></button>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <img src="./images/close.png" alt="" class="close" onclick=closebox()>
+            <p class="sign">Sign In</p>
+            <div class="form">
+                <input type="text" name="" class="mobile" placeholder="Email or mobile number">
+                <input type="text" name="" class="mobile" placeholder="Password">
+            </div>
+            <button type="button" class="start-btn dia-btn">Sign In</button>
+            <p class="text-center">OR</p>
+            <button type="button" class="start-btn dia-btn use-btn">Use a sign-in code</button>
+            <p class="text-center white">Forgot Password?</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
